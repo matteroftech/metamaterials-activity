@@ -6,7 +6,9 @@ These mechanisms are not always intuitive to design. We've distributed pencils a
 ### Fusion Constraints
 Today we will be using a lot of constraints within fusion. A constraint limits the degrees of freedom an element can have. For example, a line centered at the origin, with a length of 10mm is constrained, but can still be manipulated. 
 
-[](resources/origin-constraint.mov)
+
+https://user-images.githubusercontent.com/16449141/231341760-670dc7ce-33a5-461e-a212-27e24dc98c38.mov
+
 
 This is because the element is not **fully** constrained. If in addition to the constraints above, we specified that the line must be at an angle of 120 degrees from the *x* axis, then the line would be fully constrained (an indication of this is the line going from being blue to black). 
 ![](resources/constrained-line.png)
