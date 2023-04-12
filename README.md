@@ -1,4 +1,3 @@
-# Metamaterials
 ### Overview
 We will use fusion to mockup the different kinds of mechanical behaviors we can realize using metamaterials. Metamaterials are often made up of individual cells or voxels each of which has it's own properties, e.g. rigid and sheering cells. Today we will learn how those cells can be modeled in a fusion sketch and how we can use sketch constraints to preview the motion a structure made of metamaterial cells will achieve. 
 
