@@ -31,6 +31,10 @@ https://user-images.githubusercontent.com/16449141/231341896-51671729-621b-4f17-
 #### Constraining Edges
 We will also often need to constrain two edges of a part to always be aligned to one another. Like most things in fusion, there are a few ways to do this, even with only the constraints shown above. Below is one way to achieve this, by first constraining two edges to be parallel to one another, and then by constraining one pair of the corners together. Crucially, this will only work if the cells are all the same dimension.
 
+
+https://user-images.githubusercontent.com/16449141/231342544-2a408b14-7eb4-45a5-b0db-3575e46587b9.mp4
+
+
 #### A Word of Warning
 While fusion is a capable software, it does not have a perfect constraint solver. In some cases, an adjustment you make in your sketch may throw fusion off, and make your sketch contort in all sorts of ways. This is usually easy to fix with a quick undo, but it can become a bit frustrating over time. Please let us know if you're having issues, we are here to help. 
 
@@ -46,9 +50,12 @@ For today, we give you a set of pre-defined rigid and sheer cells. You can find 
 To see how these different kinds of cells move in Fusion, we must first anchor some part of them. We do this by fixing a point or edge of the cell in place and then manipulating the cell relative to that point. 
 
 Here are the rigid and sheer cells being fixed and manipulated. 
-![](resources/rigid-cell-moving.mov)
 
-![](resources/sheer-cell-moving.mov)
+https://user-images.githubusercontent.com/16449141/231342573-ec93c82c-0503-4476-b47c-fe48112526b7.mov
+
+
+https://user-images.githubusercontent.com/16449141/231342595-5072ba6d-78cd-4177-9f5b-1b87974924e4.mov
+
 
 ### Making a Door Latch
 Using what we've learned so far, we'll reconstruct the door latch example shared in class using the cells we've provided you. Remember from lecture how this works.
@@ -60,15 +67,19 @@ There are two groups of rigid cells and two groups of sheer cells. While we coul
 ![](resources/cell-set-up.png)
 
 All of these cells meet at the pivot point of the latch. To ensure they all share that point we will use the coincident constraint on a corner of each cell.
-![](resources/coincident-in-center.mov)
+
+https://user-images.githubusercontent.com/16449141/231342620-c46f9860-61ce-4336-b0f7-015d78a8f6af.mov
+
 
 Next, we must make sure that the corners of the sheer cell are connected to the corners of the rigid cell. We can again do this with the coincident constraint. Note the second pair of corners may be tricky due to the overlapping edges, if it's hard to click, please zoom in for more separation between the unconstrained points. 
 
-![](resources/coincident-on-edges.mov)
+https://user-images.githubusercontent.com/16449141/231342642-59c918fd-a6df-4b4d-9ad0-15a9f56ca3fc.mp4
+
 
 Now that the cells are connected to one another, we can anchor a point and start applying a force to the cells. For now we'll anchor the point under the pivot and apply a force by pulling the corner of the lower rigid cell down.
 
-![](resources/moving-latch-huh?.mov)
+https://user-images.githubusercontent.com/16449141/231342671-288bee67-8666-417c-8df1-1bd1ea79824f.mp4
+
 
 The latch moves! But you may notice that it's not moving exactly as we'd want it to. The latch is staying rotated about the pivot. Recall from lecture that in addition to the cells translating the force, we need additional cells to pad or support the horizontal translation. 
 
@@ -76,7 +87,8 @@ The latch moves! But you may notice that it's not moving exactly as we'd want it
 
 While we could do this with additional cells, we'll instead use the horizontal constraint in fusion. This ensures that the element selected remains horizontal (or vertical) as it moves. 
 
-![](resources/horizontal-constraint.mov)
+https://user-images.githubusercontent.com/16449141/231342714-8b286eec-448a-473c-9104-d2e8dffc78cc.mp4
+
 
 Now that the latch is moving as expected, we can move on to more metamaterial mechanisms using the same set of tools!
 
