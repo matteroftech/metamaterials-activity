@@ -51,30 +51,30 @@ Here are the rigid and sheer cells being fixed and manipulated.
 ### Making a Door Latch
 Using what we've learned so far, we'll reconstruct the door latch example shared in class using the cells we've provided you. Remember from lecture how this works.
 
-![](resources/resources/lecture-slide-door-latch.png)
+![](resources/lecture-slide-door-latch.png)
 
 There are two groups of rigid cells and two groups of sheer cells. While we could model each of these as groups of the same cell, we'll instead simplify a bit and model them each as their own cell. We'll start with two sheer cells, one 1x1 rigid cell and one 1x2 rigid cell.
 
-![](resources/resources/cell-set-up.png)
+![](resources/cell-set-up.png)
 
 All of these cells meet at the pivot point of the latch. To ensure they all share that point we will use the coincident constraint on a corner of each cell.
-![](resources/resources/coincident-in-center.mov)
+![](resources/coincident-in-center.mov)
 
 Next, we must make sure that the corners of the sheer cell are connected to the corners of the rigid cell. We can again do this with the coincident constraint. Note the second pair of corners may be tricky due to the overlapping edges, if it's hard to click, please zoom in for more separation between the unconstrained points. 
 
-![](resources/resources/coincident-on-edges.mov)
+![](resources/coincident-on-edges.mov)
 
 Now that the cells are connected to one another, we can anchor a point and start applying a force to the cells. For now we'll anchor the point under the pivot and apply a force by pulling the corner of the lower rigid cell down.
 
-![](resources/resources/moving-latch-huh?.mov)
+![](resources/moving-latch-huh?.mov)
 
 The latch moves! But you may notice that it's not moving exactly as we'd want it to. The latch is staying rotated about the pivot. Recall from lecture that in addition to the cells translating the force, we need additional cells to pad or support the horizontal translation. 
 
-![](resources/resources/lecture-sliides-padding.png)
+![](resources/lecture-sliides-padding.png)
 
 While we could do this with additional cells, we'll instead use the horizontal constraint in fusion. This ensures that the element selected remains horizontal (or vertical) as it moves. 
 
-![](resources/resources/horizontal-constraint.mov)
+![](resources/horizontal-constraint.mov)
 
 Now that the latch is moving as expected, we can move on to more metamaterial mechanisms using the same set of tools!
 
