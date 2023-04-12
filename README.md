@@ -42,7 +42,7 @@ There will be a lot of constraints and dimensions on your sketch today. If these
 ![](resources/sketch-palette.png)
 
 ### Rigid and Sheer Cells
-For today, we give you a set of pre-defined rigid and sheer cells. You can find them here [TODO add link]. These cells are all made using the constraints we described above. We won't ask you to design these from scratch, but it could be helpful to consider how we designed them in fusion. There are two primary kinds of cells we'll be working with today, **rigid** and **sheer** cells. 
+For today, we give you a set of pre-defined rigid and sheer cells. You can find them [here](https://a360.co/3ms87tr). These cells are all made using the constraints we described above. We won't ask you to design these from scratch, but it could be helpful to consider how we designed them in fusion. There are two primary kinds of cells we'll be working with today, **rigid** and **sheer** cells. 
 
 ![](resources/rigid-and-sheer-cells.png)
 
@@ -94,6 +94,8 @@ Now that the latch is moving as expected, we can move on to more metamaterial me
 
 ### Your Turn! Re-design Alex's Pliers
 In lecture we saw these pliers that were printed entirely as one part. The core of what is happening here is quite simple, see if you can design the pliers using our cells in fusion.
+
+![](resources/mm-pliers.png)
 
 #### What to hand-in!
 1. A screenshot of the pliers you designed in fusion, showing where the part is constrained and what point you are moving. (4 pts)
