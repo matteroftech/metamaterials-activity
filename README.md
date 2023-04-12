@@ -100,6 +100,6 @@ In lecture we saw these pliers that were printed entirely as one part. The core 
 ![](resources/mm-pliers.png)
 
 #### What to hand-in!
-1. A screenshot of the pliers you designed in fusion, showing where the part is constrained and what point you are moving. (4 pts)
+1. Two screenshot of the pliers you designed in fusion at two positions (at extreme ends), showing where the part is constrained and what point you are moving. (4 pts)
 2. An explanation of how the cells you used to make the pliers interact with one another. (4 pts)
 3. Other than 3D printing with flexible filament, how might you fabricate this part? Out of what material? (2 pts)
