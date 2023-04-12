@@ -3,7 +3,7 @@
 ### Overview
 We will use fusion to mockup the different kinds of mechanical behaviors we can realize using metamaterials. Metamaterials are often made up of individual cells or voxels each of which has it's own properties, e.g. rigid and sheering cells. Today we will learn how those cells can be modeled in a fusion sketch and how we can use sketch constraints to preview the motion a structure made of metamaterial cells will achieve. 
 
-These mechanisms are not always intuitive to design. We've distributed pencils and paper to help you sketch out how the different kinds of cells can come together into one mechanism. **Feel free to work in small groups and submit together.** 
+These mechanisms are not always intuitive to design. We've distributed pencils and paper to help you sketch out how the different kinds of cells can come together into one mechanism. **Feel free to work in small groups and talk about the lab, but please submit individually.** 
 
 ### Fusion Constraints
 Today we will be using a lot of constraints within fusion. A constraint limits the degrees of freedom an element can have. For example, a line centered at the origin, with a length of 10mm is constrained, but can still be manipulated. 
