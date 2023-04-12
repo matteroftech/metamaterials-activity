@@ -18,17 +18,18 @@ There are many ways to constrain sketch elements in fusion, all of which can be 
 ##### Coincident
 This constrains the position of two points (or a point and a line) to be the same. In the case of two points, it means their geometric coordinates must always be identical.
 
-![](resources/coincident-constraint.mov)
+
+https://user-images.githubusercontent.com/16449141/231341856-2a634122-20b6-4321-ad54-04375347c5af.mov
+
 
 ##### Parallel
 This constrains the orientation of two lines to be parallel to one another.
 
-![](resources/parallel-constraint.mov)
+https://user-images.githubusercontent.com/16449141/231341896-51671729-621b-4f17-b388-ad69ec443006.mov
+
 
 #### Constraining Edges
 We will also often need to constrain two edges of a part to always be aligned to one another. Like most things in fusion, there are a few ways to do this, even with only the constraints shown above. Below is one way to achieve this, by first constraining two edges to be parallel to one another, and then by constraining one pair of the corners together. Crucially, this will only work if the cells are all the same dimension.
-
-![](resources/edge-constraint.mov)
 
 #### A Word of Warning
 While fusion is a capable software, it does not have a perfect constraint solver. In some cases, an adjustment you make in your sketch may throw fusion off, and make your sketch contort in all sorts of ways. This is usually easy to fix with a quick undo, but it can become a bit frustrating over time. Please let us know if you're having issues, we are here to help. 
